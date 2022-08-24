@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    
+    <header class="hero"> 
+        <h1 class="app-title">Weather Tracker</h1>
+    </header>
+
+    <main class="main">
+
+        <aside class="search-filter">
+            <form class="city-form" id="city-form">
+            <input type="text" name="city" id="search-bar" class="search-bar" placeholder="Type a city">
+            <input type="text" name="state" id="state-input" class="state-input" maxlength='2' placeholder="ST">
+            <button class="search-btn" id="search-btn">Search</button>
+            </form>
+            <div class="btn-list flex-column" id="btn-list"></div>
+        </aside>
+
+    <section class="content">
+
+        <div class="weather-data" id="weather-data">
+            <h3 class="placeholder-title" id="placeholder-title">Search a city to view it's current weather and forecast!</h3>
+          <div class="data-info" id="data-info">
+            <h3 class="city-name" id="city-name"></h3>
+            <p class="temp" id="temp"></p>
+            <p class="wind" id="wind"></p>
+            <p class="humidity" id="humidity"></p>
+            <p class="cloud-coverage" id="cloud-coverage"></p>
+          </div>
+        </div>
+
+        <div class="forecast" id="forecast">
+            <h4 class="forecast-title" id="forecast-title"></h4>
+
+        
+    </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/script.js"></script> 
+</body>
+</html>

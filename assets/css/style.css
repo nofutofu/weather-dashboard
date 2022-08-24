@@ -1,0 +1,196 @@
+html,
+body {
+overflow-x: hidden;
+height: 100%;
+width: 100%;
+background-image: url("https://media.istockphoto.com/photos/sun-and-clouds-and-blue-sky-on-a-clear-day-picture-id1224140658?k=20&m=1224140658&s=170667a&w=0&h=WbI5ckFkM_p0C0hbnocojm2EMCZeFbnpqNo1vUJ7m6U=");
+background-repeat: no-repeat;
+background-size:cover;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: linear-gradient(to left, rgb(41, 41, 146), rgb(143, 84, 143));
+    height: 80px;
+    text-align: center;
+    margin: 0;
+    color:rgb(223, 244, 245);
+    resize: none;
+    width: 100%;
+}
+
+h1 {
+    margin-top: 0;
+    padding-top: 18px;
+}
+
+h3, h4, h5 {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+}
+
+.search-filter {
+    height: calc(100vh - 80px);
+    min-width: 310px;
+    width: 16vw;
+    background-color: antiquewhite;
+    align-items: center;
+}
+
+.search-bar {
+    height: 45px;
+    width: 215px;
+    text-align: right;
+    font-size: 25px;
+    letter-spacing: 2px;    
+    margin: 60px 0 20px 50px;
+}
+
+.state-input {
+    font-size: 24px;
+    height: 25px;
+    width: 35px;
+    margin-left: 85px;
+}
+
+.search-btn {
+    position: relative;
+    width: 85px;
+    height: 30px;
+    margin: 0 0 45px 20px;
+    bottom: 3px;
+    left: 5px;
+}
+
+.btn-list {
+    border-top: 3px solid gray;
+    padding: 60px 0 0 50px;
+}
+
+.btn {
+    height: 45px;
+    margin-bottom: 30px;
+    width: 220px;
+    font-size: 23px;
+}
+
+.content {
+    width: 84vw;
+}
+
+.weather-data {
+    font-size: 1.8rem;
+}
+
+.data-info {
+    margin-left: 10vw;
+    padding: 2% 0 .5% 0;
+}
+
+.placeholder-title {
+    font-size: 60px;
+    padding-top: 70px;
+    margin-left: 20vw;
+    width: 50vw;
+}
+
+.city-name {
+    font-size: 3.5rem;
+}
+
+.cloud-coverage {
+    text-transform: capitalize;
+}
+
+.forecast {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.forecast-title {
+    width: 100vw;
+    font-size: 30px;
+    padding: 70px 0 0 90px;
+}
+
+.forecast-card {
+    font-size: 18px;
+    margin: 70px 150px 0 0;
+}
+
+.forecast-card1 {
+    margin-left: 70px;
+} 
+
+.forecast-date {
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+@media (max-width: 1440px) {
+    .forecast-card {
+        font-size: 17px;
+        margin: 70px 100px 0 0px;
+    }
+    .search-filter {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .placeholder-title {
+        margin: 30% 0 0 20%;
+        font-size: 30px;
+        padding-top: 0px;
+        width: 50%;
+    }
+    .search-bar {
+        margin: 15px 0 10px 0px;
+    }
+}
+
+@media (max-width: 900px) {
+   .main {
+    flex-direction: column;
+    align-items: center;
+   }
+   .search-filter {
+    width: 100%;
+    height: 14vh;
+    display: flex;
+    flex-direction: column;
+   }
+   .btn-list {
+    display: none;
+   }
+   .placeholder-title {
+    margin: 20px 0 0 0;
+    font-size: 30px;
+    padding-top: 0px;
+    width: 0;
+    }
+    .search-bar {
+        margin: 15px 0 10px 0px;
+    }
+}
